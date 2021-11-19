@@ -17,7 +17,7 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
-FDEVICE="dandelion"
+FDEVICE="mt6765"
 #set -o xtrace
 
 fox_get_target_device() {
@@ -42,6 +42,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
 	export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/platform/bootdevice/by-name/recovery"
 	export FOX_RECOVERY_BOOT_PARTITION="/dev/block/platform/bootdevice/by-name/boot"
+	export TARGET_DEVICE_ALT="dandelion,angelica"
+	export OF_TARGET_DEVICES="dandelion,angelica"
 	export OF_USE_GREEN_LED=1
 
 	export OF_USE_MAGISKBOOT=1

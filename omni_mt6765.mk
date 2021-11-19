@@ -23,9 +23,9 @@ $(call inherit-product, vendor/omni/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mt6765
-PRODUCT_NAME := omni_KD7
+PRODUCT_NAME := omni_mt6765
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := Redmi 9c,Redmi 9A
+PRODUCT_MODEL := Redmi 9A
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_RELEASE_NAME := Xiaomi Redmi 9 Series
 
